@@ -2,6 +2,7 @@ package com.xunhaifeng.meizhi.view;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -28,12 +29,20 @@ import com.xunhaifeng.meizhi.contract.MeiZhiContract;
 import com.xunhaifeng.meizhi.module.MeiZhiBean;
 import com.xunhaifeng.meizhi.presenter.MeiZhiPresenter;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Properties;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
 public class MeiZhiActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, MeiZhiContract.View<MeiZhiBean>, SwipeRefreshLayout.OnRefreshListener {
+
+    private static final String KEY_MIUI_VERSION_CODE = "ro.miui.ui.version.code";
+    private static final String KEY_MIUI_VERSION_NAME = "ro.miui.ui.version.name";
+    private static final String KEY_MIUI_INTERNAL_STORAGE = "ro.miui.internal.storage";
 
     Toolbar mToolbar;
     FloatingActionButton mFab;
@@ -85,12 +94,32 @@ public class MeiZhiActivity extends AppCompatActivity
         mFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v,"这是massage", Snackbar.LENGTH_LONG).show();
+                Snackbar.make(v,"定制系统信息："+ isMIUI() , Snackbar.LENGTH_LONG).show();
             }
         });
         mSwipeRefresh.setOnRefreshListener(this);
     }
 
+    public static boolean isMIUI(){
+        return getRomProduct(KEY_MIUI_VERSION_CODE) != null
+                || getRomProduct(KEY_MIUI_VERSION_NAME) != null
+                || getRomProduct(KEY_MIUI_INTERNAL_STORAGE) != null;
+    }
+
+    /**
+     * 获取当前手机操作系统，需要考虑刷机的情况
+     * @return
+     */
+    public static String getRomProduct(String name){
+        try {
+            Properties properties= new Properties();
+            properties.load(new FileInputStream(new File(Environment.getRootDirectory(), "build.prop")));
+            return properties.getProperty(name);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "other";
+    }
     @Override
     protected void onResume() {
         super.onResume();
