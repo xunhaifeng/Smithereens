@@ -13,7 +13,7 @@
               android:background="@drawable/bg_card"
               android:clickable="true">
 
-    <com.xunhaifeng.meizhi.view.RatioImageView
+    <com.xunhaifeng.module.meizhi.view.RatioImageView
         android:id="@+id/meizhi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

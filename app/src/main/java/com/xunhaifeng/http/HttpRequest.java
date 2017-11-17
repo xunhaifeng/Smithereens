@@ -102,6 +102,18 @@ public class HttpRequest {
                         }
                         break;
                     case USE_NET_ONLY:
+                        //获取网络请求的数据
+                        response = okHttpClient.newCall(request).execute();
+                        if (response.code() == 200) {
+                            String mResponse = response.body().string();
+                            request.url();
+                            T model = FastJsonUtil.getObject(mResponse, clazz);
+                            observableEmitter.onNext(model);
+                            observableEmitter.onComplete();
+                        }else{
+                            Throwable e = new Throwable("请求失败");
+                            observableEmitter.onError(e);
+                        }
                         break;
                 }
             }

@@ -4,7 +4,13 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">切换到技术</string>
     <string name="ask_saving_picture">保存到手机?</string>
     <string name="picture_has_save_to">图片已保存至 %s 文件夹</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hotfix_idSecret">24698033-1</string>
+    <string name="hotfix_appSecret">64f3e4a55d48d939689f04dfa66e4ac9</string>
+    <string name="hotfix_rsaSecret">MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCNd/WfWxWDRn133VtvrSMfocHhZQHgPZHdY3ZCnB3hwS21j3+Nu79QaYkG2FUVd5Zc6yi21yHf2zWF34GvDOhLCpt3LG4tQcybSJYisdJSsZqK1Ax7026KkgpgAg6EkqMoH8GmB4ZPUHEZ8zlp24wR/g9a4ZycN464XQtSKKXbzUd7lY5s2hkljAZHicUNDspzjDTmEiIgTy/2hGPX6INHY+Ub54IUpASlqhFcb9zKPWdWz395sw0GYt0D9UmCR0FnpXRYOw4+fAyYCfMeahujdHYBvnyJCc30VelB3o/huWGNECaC1+WwoZpjJWGc9lnn/HfmIqjvWAF7c8xtrgw7AgMBAAECggEAGY5FGc97eGaAfenH/cmaIbm3636ysw6MTiEMmQXYxBKArl7I3RLAgcc+0LS90g3zZL+6cCU24liYN6HjrHq5b+zvnryw/o33Z0najVPwOa4Jy/B4fNn6CyBMrYFRnBNdU/9AnTyYv7U5aUWt5niZuhpaLcG55+KFbrqoM+RR6f3LiZKoMAFmi3rgduw4Jpm4otB06uSwt4Ozs+VuACfLcwwUyd461c/h8ArnaMnaE8SU9oXt5dsoyPhzIMcvONgb1dNVoiaBHynOeIvoQIaatQ6Yp3PbFiwkN2c05S6ZnSqvZJMhgOx6iU3Am16a5v9zdSWXhjn7VrOQqGIf7WvYIQKBgQDHhu/XvWM0EwqOr+6R7JhjvSSkEui92RUxO2sNZqnZJPH9BqoJAmgnww8QtUNT3Naj/3ft1nNZOCQVDwq4M+ZG2ovd7qLd7HX+BLoz9irnia2exnmwbHaLFUofmKsbFTCamqYC3R6yQfR580simbDRzwhF1ucvUFSN7IYF+KR8MQKBgQC1gkxe5sk/IvO6BhZX+iB8dEGk3LpMgnc6WvrZ0FPXrUycE+Cg1fmzU5dnPcaPxMG3k2SIqylqlfnX6O4dJPZ38mx7X2goPYw9A9TuDJJtWGREBJ2BtGkAJrJu5iAK9QzXT21nFvdAEKxDgezWIELRoDqm35A0hPseXPCqggQwKwKBgQCbcVuPNuN/YUo7SYLSOoGqSmOuU3Dw3pttBH5tLUsreWXxGu0DIdXlDEjDWoP+ZLDviQp0xzqMCnnJ0jMmuIAxOPf4SX6m6B4wbJxn+OMKCS+y36tUL9vWlRpvLTA4ZDS+bbbhykSs2UdObqVdamDfw6wNRNRM/wcwnlD3e/MhMQKBgBZ6UGLgScPb3DsJTfMPMr621vpHq3qWHZXIdpBK0FdBSt95RrQkS4v9qh5K9DARubu2MRkLuVFNyWcHnZVWYn9wMicFJaz2EkvsEY55WBjafXA+8hKB+Q7fu/En5of02OZBG9dMbMouRmcFzAKodB3prdnEjeMzJLYZ5GP5PfOJAoGBAKNJYECX6Fgc/9mE9I7Xjkj1wCRJ1OInZhHnT1EeougvPHify89VmL6mKoJAYEWuyX/D9GfGdngoK190cgnzomRrsPrAYWP83C8fMCP56eO0b78UGP8B8vDAReVcR2KU0Nkxt991GjHGNwakV9p/XHtvxjveVRZVTx0Xtp2/2Y2z</string>
 </resources>

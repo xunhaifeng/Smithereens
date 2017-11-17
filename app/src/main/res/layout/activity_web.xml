@@ -5,13 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.xunhaifeng.module.MainActivity"
-    tools:showIn="@layout/app_bar_main">
-
-    <FrameLayout
-        android:id="@+id/fl_main_replace"
+    tools:context="com.xunhaifeng.module.web.WebActivity">
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-
 </android.support.constraint.ConstraintLayout>

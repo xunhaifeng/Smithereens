@@ -11,8 +11,7 @@ package com.xunhaifeng.base;
  * @class MVP中的presenter层父类
  */
 
-public interface BasePresenter {
-    void subscribe();
-
+public interface BasePresenter<T extends BaseView> {
+    void onSubscribe(T t);
     void unsubscribe();
 }

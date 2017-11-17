@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:id="@+id/fl_rl"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/refresh"-->
+        <!--android:layout_width="368dp"-->
+        <!--android:layout_height="495dp"-->
+        <!--tools:layout_editor_absoluteY="8dp"-->
+        <!--tools:layout_editor_absoluteX="8dp">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/list"-->
+            <!--android:layout_width="368dp"-->
+            <!--android:layout_height="495dp"-->
+            <!--android:paddingLeft="2.5dp"-->
+            <!--android:paddingRight="2.5dp"-->
+            <!--tools:layout_editor_absoluteY="8dp"-->
+            <!--tools:layout_editor_absoluteX="8dp"/>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</FrameLayout>
